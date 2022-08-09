@@ -1,0 +1,584 @@
+@font-face {
+  font-family: "edufun";
+  src: url("../fonts/HelveticaNeueW23-Reg.woff");
+}
+
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  list-style-type: none;
+  outline: 0;
+}
+
+.dark-mode {
+  background-color: wheat;
+  color: white;
+}
+.coloor {
+  background: #8cb337 !important;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+::selection {
+  background: #c1c1c1;
+}
+
+body {
+  background: #0e0e0e;
+  font-family: "edufun";
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+h1 {
+  color: #231f50;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+}
+
+.dark {
+  color: black !important;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #340979;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track:hover {
+  box-shadow: inset 0 0 5px #8cb337;
+  transition: background 0.3s, border-top 0.3s, color 0.3s;
+  -webkit-transition: background 0.3s, border-top 0.3s, color 0.3s;
+  transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8cb337;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #340979;
+  transition: background 0.3s, border-top 0.3s, color 0.3s;
+  -webkit-transition: background 0.3s, border-top 0.3s, color 0.3s;
+  transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+}
+/*-----------------------------------------------------*/
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.logo {
+  margin-right: 600px;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.log {
+  margin-top: 15px;
+}
+
+.log a {
+  padding: 10px;
+  color: #8f8f8f;
+}
+
+.login,
+.signup,
+.profile,
+.logout {
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s, border-top 0.3s, color 0.3s;
+  -webkit-transition: background 0.3s, border-top 0.3s, color 0.3s;
+  transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+}
+
+.login:hover,
+.signup:hover,
+.profile:hover,
+.logout:hover {
+  color: #ffffff;
+  background-color: #8cb337;
+  border-radius: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s, border-top 0.3s, color 0.3s;
+  -webkit-transition: background 0.3s, border-top 0.3s, color 0.3s;
+  transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+}
+
+.log .active {
+  color: #ffffff;
+  border-radius: 5px;
+  background: #8cb337;
+}
+
+#menu {
+  width: 100%;
+  height: 58px;
+  background: url(../img/background.png) repeat #0e0e0e;
+}
+
+#menu .menu {
+  display: flex;
+  justify-content: left;
+  margin-left: 200px;
+}
+
+#menu .menu .nav ul {
+  display: flex;
+  text-align: center;
+}
+
+#menu .menu-item {
+  border-top: 2px solid transparent;
+  transition: background 0.3s, border-top 0.3s, color 0.3s;
+  -webkit-transition: background 0.3s, border-top 0.3s, color 0.3s;
+  transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+}
+
+.menu-item > a > button > i {
+  cursor: pointer;
+}
+
+#menu .active {
+  border-top: 2px solid #8cb337 !important;
+  color: #000;
+  background: #0e0e0e;
+}
+
+#menu .active a {
+  color: #ffffff !important;
+}
+
+#menu .menu-item:hover {
+  border-top: 2px solid #8cb337 !important;
+  background: #0e0e0e;
+}
+
+#menu .menu-item a {
+  text-decoration: none;
+  color: #8f8f8f;
+  font-size: 16px;
+  display: block;
+  padding: 20px 20px 15px 15px;
+  height: 22px;
+}
+
+#menu .menu-item > a {
+  line-height: 50%;
+  padding: 19px 20px 15px 15px;
+}
+
+#menu .menu-item:hover a {
+  color: #ffffff !important;
+}
+
+.search {
+  margin-top: 10px;
+  width: 300px;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #8cb337;
+  background-color: #ebebeb;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 15px 0 0 15px;
+}
+
+.searchTerm:focus {
+  color: #000000;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #8cb337;
+  background: #8cb337;
+  text-align: center;
+  color: #ebebeb;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+h4 {
+  color: #fff;
+  flex-wrap: wrap;
+}
+/*-----------------------------------------------------*/
+
+#sign-in {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in {
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 550px;
+  margin-top: 60px;
+  background: url(../img/background.png) repeat #0e0e0e;
+}
+.sign-in label {
+  padding: 0px 10px 0px 0px;
+}
+
+.sign-in h2 {
+  color: #ffffff;
+}
+
+.sign-in label {
+  color: #fff;
+}
+
+.sign-in #user {
+  margin-top: 2px;
+  float: right;
+  border: 0.2px solid #fff;
+  border-radius: 5px;
+}
+
+.sign-in #pass {
+  float: right;
+  border: 0.2px solid #fff;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+
+.sign-in .button {
+  cursor: pointer;
+  padding: 5px 5px;
+  color: #fff;
+  border-radius: 8px;
+  border: 0.2px solid #8cb337;
+  background-color: #8cb337;
+}
+
+/********------------------------------------------------------------------*********/
+
+#profile {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 20px;
+  border-radius: 20px;
+  width: 70%;
+  background: url(../img/background.png) repeat #0e0e0e;
+}
+
+#profile .container h1 {
+  font-size: 50px;
+  color: #fff;
+}
+
+tr {
+  color: #8f8f8f;
+}
+
+th {
+  float: left;
+}
+
+/********------------------------------------------------------------------*********/
+
+#games {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#gamess {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#game {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.games-text {
+  width: 1000px;
+  border-bottom: 1px solid #8f8f8f;
+}
+
+.games-text p {
+  color: #ffffff;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.games {
+  padding: 5px 5px;
+}
+
+#games .box {
+  direction: rtl;
+  position: relative;
+  border: 2px solid #ffffff;
+}
+
+#games .box a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#games .topinfo {
+  position: absolute;
+  margin: 4px 3px 0px 0px;
+}
+
+#games .topinfo div {
+  background: #8cb337;
+  padding: 2px 4px 0px 3px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+#games .playicon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 35%;
+  right: 80%;
+  z-index: 2;
+}
+
+#games .image {
+  display: block;
+  width: 234px;
+  height: 136px;
+  background: url(../img/background-img.jpg) repeat;
+}
+
+#games .title {
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  bottom: 0;
+  background-image: linear-gradient(
+    to top,
+    rgba(18, 22, 25, 0.85),
+    rgba(0, 0, 0, 0)
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgba(18, 22, 25, 0.85),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+#games .title p {
+  line-height: 150%;
+  padding: 0px 6px 0px 0px;
+}
+
+#games .games-1 {
+  max-width: 1000px;
+  margin-top: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0px 40px;
+}
+/*--------------------*/
+
+.form {
+  width: 350px;
+  padding: 64px 15px 24px;
+  margin: 0 auto;
+}
+.form .control {
+  margin: 0 0 24px;
+}
+.form .control input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-family: monospace, serif;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+}
+.form .control input:hover,
+.form .control input:focus {
+  outline: none;
+  border: 0;
+}
+
+.control > h1 {
+  color: #fff;
+}
+.form .btn {
+  width: 100%;
+  display: block;
+  padding: 14px 16px;
+  background: transparent;
+  outline: none;
+  border: 0;
+  color: #fff;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.block-cube {
+  position: relative;
+}
+.block-cube .bg-top {
+  position: absolute;
+  height: 10px;
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #340979 37%, #8cb337 94%);
+  bottom: 100%;
+  left: 5px;
+  right: -5px;
+  transform: skew(-45deg, 0);
+  margin: 0;
+}
+.block-cube .bg-top .bg-inner {
+  bottom: 0;
+}
+.block-cube .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #340979 37%, #8cb337 94%);
+}
+.block-cube .bg-right {
+  position: absolute;
+  background: #020024;
+  background: #8cb337;
+  top: -5px;
+  z-index: 0;
+  bottom: 5px;
+  width: 10px;
+  left: 100%;
+  transform: skew(0, -45deg);
+}
+.block-cube .bg-right .bg-inner {
+  left: 0;
+}
+.block-cube .bg .bg-inner {
+  transition: all 0.2s ease-in-out;
+}
+.block-cube .bg-inner {
+  background: #212121;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+}
+.block-cube .text {
+  position: relative;
+  z-index: 2;
+}
+.block-cube.block-input input {
+  position: relative;
+  z-index: 2;
+}
+.block-cube.block-input input:focus ~ .bg-right .bg-inner,
+.block-cube.block-input input:focus ~ .bg-top .bg-inner,
+.block-cube.block-input input:focus ~ .bg-inner .bg-inner {
+  top: 100%;
+  background: #340979;
+}
+.block-cube.block-input .bg-top,
+.block-cube.block-input .bg-right,
+.block-cube.block-input .bg {
+  background: #340979;
+  transition: background 0.2s ease-in-out;
+}
+.block-cube.block-input .bg-right .bg-inner,
+.block-cube.block-input .bg-top .bg-inner {
+  transition: all 0.2s ease-in-out;
+}
+.block-cube.block-input:focus .bg-top,
+.block-cube.block-input:focus .bg-right,
+.block-cube.block-input:focus .bg,
+.block-cube.block-input:hover .bg-top,
+.block-cube.block-input:hover .bg-right,
+.block-cube.block-input:hover .bg {
+  background: #8cb337;
+}
+.block-cube.block-cube-hover:focus .bg .bg-inner,
+.block-cube.block-cube-hover:hover .bg .bg-inner {
+  top: 100%;
+}
+
+.credits {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 15px 15px;
+  width: 100%;
+  z-index: 111;
+}
+.credits a {
+  opacity: 0.6;
+  color: #fff;
+  font-size: 11px;
+  text-decoration: none;
+}
+.credits a:hover {
+  opacity: 1;
+}
+
+.block-cube.block-input .green,
+.block-cube.block-input .green,
+.block-cube.block-input .green,
+.block-cube.block-input .green,
+.block-cube.block-input .green,
+.block-cube.block-input .green {
+  background: #8cb337 !important;
+}
